@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  height: 100px;
+}
+
+#game_section {
+  height: 650px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.342);
+  border-radius: 10px;
+  position: relative;
+}
+
+#game_section .computer {
+  transform: rotate(180deg);
+  margin: 30px 0px;
+}
+
+#game_section .user_sertion {
+  margin: 30px 0px;
+  position: relative;
+}
+
+#game_section .user_sertion::before {
+  content: "VS";
+  position: absolute;
+  font-size: 3rem;
+  font-weight: bolder;
+  top: -50px;
+  left: 20px;
+}
+
+#game_section .game_score {
+  color: blue;
+  font-size: 3rem;
+  margin: 20px 0px;
+  text-transform: uppercase;
+}
+
+#game_section .user_seclaction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#game_section .user_seclaction button {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 10px;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#game_section .user_seclaction button {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+#game_section .user_seclaction button img {
+  height: 60px;
+}
+
+.computer p {
+  font-size: 1.5rem;
+  transform: rotate(180deg);
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.user_sertion p {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bolder;
+}
+
+.game_score {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game_score p {
+  font-size: 1.7rem;
+  font-weight: bolder;
+}
+
+.result_anausman {
+  position: absolute;
+  z-index: 99;
+  border-radius: 20px;
+  width: 80%;
+  height: 100px;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  font-size: 3rem;
+  font-weight: bolder;
+  line-height: 100px;
+  text-align: center;
+  color: rgb(0, 60, 255);
+  text-transform: uppercase;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+.result_anausman.active {
+  transform: scale(1);
+}
+
+/* form */
+.user_name_id_create {
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: grid;
+  place-items: center;
+}
+
+.user_name_id_create .form {
+  height: 100px;
+  padding: 2px 20px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.342);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.user_name_id_create .form input {
+  all: unset;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.377);
+  width: 300px;
+  border-radius: 30px;
+  padding: 0px 20px;
+  font-size: 1.5rem;
+}
+.user_name_id_create .form button {
+  height: 40px;
+  width: 100px;
+  background-color: blueviolet;
+  border-radius: 30px;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0px 10px;
+}
+
+.game_over {
+  height: 650px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.342);
+  border-radius: 10px;
+  position: absolute;
+  background-color: red;
+  z-index: 99;
+  flex-direction: column;
+  display: none;
+}
+
+.game_over img {
+  border-radius: 50%;
+  height: 300px;
+}
+
+.game_over h4 {
+  font-size: 5rem;
+  color: yellow;
+  text-transform: uppercase;
+}
+
+.game_over button {
+  height: 45px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 0px 15px;
+  border: none;
+  cursor: pointer;
+  background-color: blueviolet;
+  color: #fff;
+  font-weight: bolder;
+  margin-top: 100px;
+  border-radius: 5px;
+}

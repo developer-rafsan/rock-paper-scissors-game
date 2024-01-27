@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+
+    <!-- incloud css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- create user id -->
+    <div class="user_name_id_create">
+      <div class="form">
+        <input placeholder="enter your user name" type="text" />
+        <button id="start_btn">Start 🎮</button>
+      </div>
+    </div>
+
+    <!-- game over -->
+    <div class="game_over">
+      <img src="/" alt="win svg" />
+      <h4>you win</h4>
+      <button>new game</button>
+    </div>
+
+    <!-- game setion -->
+    <section id="game_section">
+      <!-- resrlt anausman -->
+      <div class="result_anausman"></div>
+
+      <!-- computer player -->
+      <div class="computer">
+        <img src="./img_png/1.png" alt="img_png" />
+        <p>Bot</p>
+      </div>
+
+      <!-- user player -->
+      <div class="user_sertion">
+        <img src="./img_png/1.png" alt="img_png" />
+        <p id="user_name_desplay"></p>
+      </div>
+
+      <!-- game score -->
+      <div class="game_score">
+        <p id="computer_score"><span>bot</span> <span>0</span></p>
+        <p id="user_score"><span>user</span> <span>0</span></p>
+      </div>
+
+      <!-- user seclete image -->
+      <div class="user_seclaction">
+        <button id="1"><img src="./img_png/1.png" alt="img" />rock</button>
+        <button id="2"><img src="./img_png/2.png" alt="img" />paper</button>
+        <button id="3"><img src="./img_png/3.png" alt="img" />Scissors</button>
+      </div>
+    </section>
+
+    <!-- incloud js  -->
+    <script src="./app.js"></script>
+  </body>
+</html>
